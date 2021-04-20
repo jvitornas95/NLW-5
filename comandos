@@ -1,0 +1,9 @@
+npx tsc --init -> Iniciar projeto typescript
+
+npm i --save typescript -> instalar typescript
+npm add @types/express -> Auto complete para express
+npm i -D tsc-node-dev
+
+CONFIGURAÇÃO TYPESCRYPT
+
+"strict": false,
