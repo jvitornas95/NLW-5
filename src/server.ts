@@ -1,20 +1,13 @@
 import express from "express";
 
+import "./database";
+
+import { routes } from './routes';
+
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(express.urlencoded({extended: true}));
 
-    res.send('OK');
-
-});
-
-app.post("/", (req, res) => {
-
-    res.json({
-        status: 200,
-        message: 'Bem vindo ao NLW-5'
-    });
-
-});
+app.use(routes);
 
 app.listen(3000, () => console.log('Server is running'));

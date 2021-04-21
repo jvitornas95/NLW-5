@@ -7,3 +7,5 @@ npm i -D tsc-node-dev
 CONFIGURAÇÃO TYPESCRYPT
 
 "strict": false,
+
+npx typeorm migration:create -n CreateSettings
