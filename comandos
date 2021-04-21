@@ -9,3 +9,10 @@ CONFIGURAÇÃO TYPESCRYPT
 "strict": false,
 
 npx typeorm migration:create -n CreateSettings
+npm add @types/uuid -D
+npm install --save uuid
+
+npm run typeorm migration:run
+npx typeorm migration:create -n CreateSettings
+
+npm i --save typeorm reflect-metadata sqlite3
